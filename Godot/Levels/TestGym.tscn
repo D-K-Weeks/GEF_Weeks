@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dxba7qrse2q4b"]
+
+[ext_resource type="PackedScene" uid="uid://dj1h3k1si0gbu" path="res://Scenes/Activator.tscn" id="1_0d135"]
+[ext_resource type="PackedScene" uid="uid://rck5drrysxyr" path="res://Scenes/BuildingGroup.tscn" id="2_p4f4d"]
+[ext_resource type="PackedScene" uid="uid://3sya2l1b5xar" path="res://Scenes/Greeter.tscn" id="3_bfef1"]
+
+[node name="Root" type="Node3D" unique_id=744926545]
+
+[node name="Activator" parent="." unique_id=1727416876 node_paths=PackedStringArray("HelloComponent") instance=ExtResource("1_0d135")]
+HelloComponent = NodePath("../Greeter")
+
+[node name="BuildingGroup" parent="." unique_id=795492949 instance=ExtResource("2_p4f4d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.783939, 0, 0)
+
+[node name="Greeter" parent="." unique_id=245592978 instance=ExtResource("3_bfef1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.9055644, 0.27962124, 0.07539189)
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1096122926]
+transform = Transform3D(-0.8429035, 0, 0.5380648, 0, 1, 0, -0.5380648, 0, -0.8429035, 0, 0.7975769, -2.304254)

@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://rck5drrysxyr"]
+
+[ext_resource type="ArrayMesh" uid="uid://b2ypu0orbj4x1" path="res://Addons/Models/OBJ format/building-a.obj" id="1_xy2od"]
+[ext_resource type="ArrayMesh" uid="uid://cghghkodd38c6" path="res://Addons/Models/OBJ format/building-d.obj" id="2_7847t"]
+
+[node name="BuildingGroup" type="Node3D" unique_id=795492949]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=639714342]
+
+[node name="BuildingA" type="MeshInstance3D" parent="." unique_id=847276254]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.98252213, 0, -0.25300598)
+mesh = ExtResource("1_xy2od")
+
+[node name="BuildingD" type="MeshInstance3D" parent="." unique_id=865643529]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1332686, 0, -0.1969133)
+mesh = ExtResource("2_7847t")
