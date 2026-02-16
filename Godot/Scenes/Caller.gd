@@ -1,15 +1,15 @@
 extends Node3D
 
-class_name Activator
+class_name Caller
 
-@export var HelloComponent: Greeter
+@export var receiver: Receiver
 
 func _ready() -> void:
-	if HelloComponent == null:
-		push_warning("No Greeter assigned to UsesGreeter.gd")
+	if receiver == null:
+		push_warning("No Receiver assigned")
 		return
 		
-	print(HelloComponent.SayHello())
+	print(receiver.OnCalled())
 	pass
 
 #func _ungandled_input(event: InputEvent) -> void:
