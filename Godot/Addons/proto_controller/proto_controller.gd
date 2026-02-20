@@ -1,4 +1,4 @@
-# ProtoController v1.0 by Brackeys
+ # ProtoController v1.0 by Brackeys
 # CC0 License
 # Intended for rapid prototyping of first-person games.
 # Happy prototyping!

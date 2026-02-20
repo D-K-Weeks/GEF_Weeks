@@ -35,13 +35,13 @@ mesh = SubResource("PlaneMesh_dju4v")
 [node name="PressurePlate" type="Node3D" parent="." unique_id=1284793462]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -7.0782914)
 
+[node name="MeshInstance3D" type="MeshInstance3D" parent="PressurePlate" unique_id=1871386411]
+transform = Transform3D(9.338567, 0, 0, 0, 0.1422623, 0, 0, 0, 9.183082, 0, 0, 0)
+mesh = ExtResource("3_nfvm6")
+
 [node name="Area3D" type="Area3D" parent="PressurePlate" unique_id=24524695]
 disable_mode = 1
 script = ExtResource("2_dju4v")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="PressurePlate/Area3D" unique_id=187721941]
 shape = SubResource("BoxShape3D_nfvm6")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="PressurePlate" unique_id=1871386411]
-transform = Transform3D(9.338567, 0, 0, 0, 0.1422623, 0, 0, 0, 9.183082, 0, 0, 0)
-mesh = ExtResource("3_nfvm6")
