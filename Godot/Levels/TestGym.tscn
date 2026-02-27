@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://dxba7qrse2q4b"]
 
-[ext_resource type="Script" uid="uid://i3t0tqpo2bbu" path="res://Scenes/Receiver.gd" id="2_0d135"]
+[ext_resource type="Script" uid="uid://i3t0tqpo2bbu" path="res://Scenes/scripts/Receiver.gd" id="2_0d135"]
 [ext_resource type="PackedScene" uid="uid://rck5drrysxyr" path="res://Scenes/BuildingGroup.tscn" id="2_p4f4d"]
-[ext_resource type="Script" uid="uid://dpqaao13lq0rc" path="res://Scenes/Caller.gd" id="3_p4f4d"]
+[ext_resource type="Script" uid="uid://dpqaao13lq0rc" path="res://Scenes/scripts/Caller.gd" id="3_p4f4d"]
 
 [node name="Root" type="Node3D" unique_id=744926545]
 
