@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://csy0qbjnk7l7y"
+path="res://.godot/imported/character-orc.obj-6145d9ac587e4d1f1db9784cd2156bef.mesh"
+
+[deps]
+
+files=["res://.godot/imported/character-orc.obj-6145d9ac587e4d1f1db9784cd2156bef.mesh"]
+
+source_file="res://Addons/DungeonOBJ/character-orc.obj"
+dest_files=["res://.godot/imported/character-orc.obj-6145d9ac587e4d1f1db9784cd2156bef.mesh", "res://.godot/imported/character-orc.obj-6145d9ac587e4d1f1db9784cd2156bef.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

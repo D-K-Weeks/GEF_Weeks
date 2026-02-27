@@ -2,7 +2,8 @@
 
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://Addons/proto_controller/proto_controller.tscn" id="1_eye27"]
 [ext_resource type="Script" uid="uid://cvyodvi8hskx7" path="res://Levels/pressureplate.gd" id="2_dju4v"]
-[ext_resource type="ArrayMesh" uid="uid://cj1nroflcr88x" path="res://Addons/Models/OBJ format/detail-parasol-b.obj" id="3_nfvm6"]
+[ext_resource type="ArrayMesh" uid="uid://cj1nroflcr88x" path="res://Addons/City/OBJ format/detail-parasol-b.obj" id="3_nfvm6"]
+[ext_resource type="ArrayMesh" uid="uid://dwyum0w0m7ujf" path="res://Addons/DungeonOBJ/coin.obj" id="4_4pyvt"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_eye27"]
 size = Vector3(71.02931, 1, 71.37892)
@@ -33,15 +34,24 @@ transform = Transform3D(35.934135, 0, 0, 0, 1.7563688, 0, 0, 0, 35.934135, 0, 0,
 mesh = SubResource("PlaneMesh_dju4v")
 
 [node name="PressurePlate" type="Node3D" parent="." unique_id=1284793462]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -7.0782914)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -7.1827927)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="PressurePlate" unique_id=1871386411]
-transform = Transform3D(9.338567, 0, 0, 0, 0.1422623, 0, 0, 0, 9.183082, 0, 0, 0)
+transform = Transform3D(9.338567, 0, 0, 0, 0.1422623, 0, 0, 0, 9.183082, 0, 0, -14.07099)
 mesh = ExtResource("3_nfvm6")
 
 [node name="Area3D" type="Area3D" parent="PressurePlate" unique_id=24524695]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -13.1001)
 disable_mode = 1
 script = ExtResource("2_dju4v")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="PressurePlate/Area3D" unique_id=187721941]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.9148922)
 shape = SubResource("BoxShape3D_nfvm6")
+
+[node name="Coin" type="Node3D" parent="." unique_id=1331190999]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.569337, 0, -12.33069)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Coin" unique_id=1213399952]
+transform = Transform3D(3.0292163, 0, 0, 0, 3.0292163, 0, 0, 0, 3.0292163, 0.049989223, 0.14530754, -0.010048151)
+mesh = ExtResource("4_4pyvt")

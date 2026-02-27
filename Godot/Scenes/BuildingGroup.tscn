@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://rck5drrysxyr"]
 
-[ext_resource type="ArrayMesh" uid="uid://b2ypu0orbj4x1" path="res://Addons/Models/OBJ format/building-a.obj" id="1_xy2od"]
-[ext_resource type="ArrayMesh" uid="uid://cghghkodd38c6" path="res://Addons/Models/OBJ format/building-d.obj" id="2_7847t"]
+[ext_resource type="ArrayMesh" uid="uid://b2ypu0orbj4x1" path="res://Addons/City/OBJ format/building-a.obj" id="1_xy2od"]
+[ext_resource type="ArrayMesh" uid="uid://cghghkodd38c6" path="res://Addons/City/OBJ format/building-d.obj" id="2_7847t"]
 
 [node name="BuildingGroup" type="Node3D" unique_id=795492949]
 

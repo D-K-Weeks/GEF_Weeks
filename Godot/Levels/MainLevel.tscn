@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://drsrkodygsmsy"]
+
+[ext_resource type="Script" uid="uid://b5vr7sm3j8qvh" path="res://Scenes/Input Handler/inputhandler.gd" id="1_ovnwc"]
+
+[node name="MainLevel" type="Node3D" unique_id=821717901]
+
+[node name="Node3D" type="Node3D" parent="." unique_id=1428508146]
+script = ExtResource("1_ovnwc")
