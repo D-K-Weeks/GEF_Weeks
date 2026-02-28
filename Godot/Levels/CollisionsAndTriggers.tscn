@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://cvyodvi8hskx7" path="res://Levels/pressureplate.gd" id="2_dju4v"]
 [ext_resource type="ArrayMesh" uid="uid://cj1nroflcr88x" path="res://Addons/City/OBJ format/detail-parasol-b.obj" id="3_nfvm6"]
 [ext_resource type="ArrayMesh" uid="uid://dwyum0w0m7ujf" path="res://Addons/DungeonOBJ/coin.obj" id="4_4pyvt"]
+[ext_resource type="Script" uid="uid://dm48kvfmri4c8" path="res://Scenes/scripts/coin_collected.gd" id="5_7h56j"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_eye27"]
 size = Vector3(71.02931, 1, 71.37892)
@@ -12,6 +13,10 @@ size = Vector3(71.02931, 1, 71.37892)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_nfvm6"]
 size = Vector3(3.1816406, 1, 3.152832)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_per45"]
+height = 0.8755684
+radius = 0.8261719
 
 [node name="CollisionsAndTriggers" type="Node3D" unique_id=264520605]
 
@@ -55,3 +60,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.569337, 0, -12.33069)
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Coin" unique_id=1213399952]
 transform = Transform3D(3.0292163, 0, 0, 0, 3.0292163, 0, 0, 0, 3.0292163, 0.049989223, 0.14530754, -0.010048151)
 mesh = ExtResource("4_4pyvt")
+
+[node name="Area3D" type="Area3D" parent="Coin" unique_id=480989480]
+script = ExtResource("5_7h56j")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Coin/Area3D" unique_id=1690584084]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0.05023575, 0.7753154, -0.020521164)
+shape = SubResource("CylinderShape3D_per45")
